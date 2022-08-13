@@ -53,7 +53,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger Btn */}
-        <div className="block md:hidden" onClick={handleNav}>
+        <div className="block md:hidden z-10" onClick={handleNav}>
           {nav ? (
             <AiOutlineClose size={20} className="text-white" />
           ) : (
@@ -65,17 +65,14 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#F8C8DC] ease-in-out duration-500"
-              : "fixed left-[-100%]"
+              ? "fixed right-0 top-0 w-full h-screen flex flex-col justify-center items-center text-center bg-[#F8C8DC] ease-in-out duration-500"
+              : "fixed right-[-100%]"
           }
         >
           <Link onClick={handleNav} to="home" smooth={true} duration={500}>
-            <h1 className="cursor-pointer w-full text-3xl font-bold text-pink-500 hover:text-pink-100 m-4">
-              DESI GLOW
-            </h1>
           </Link>
-          <ul className="uppercase p-4">
-            <li className="p-4 border-b border-gray-600">
+          <ul className="py-6 text-4xl ">
+            <li className="p-4">
               <Link
                 className="cursor-pointer font-bold text-gray-500 hover:text-gray-100 ease-in-out duration-300"
                 onClick={handleNav}
@@ -83,10 +80,10 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                Home
+                home
               </Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
               <Link
                 className="cursor-pointer font-bold text-gray-500 hover:text-gray-100 ease-in-out duration-300"
                 onClick={handleNav}
@@ -94,10 +91,10 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                About
+                about
               </Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
               <Link
                 className="cursor-pointer font-bold text-gray-500 hover:text-gray-100 ease-in-out duration-300"
                 onClick={handleNav}
@@ -105,10 +102,10 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                Treatments
+                treatments
               </Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
               <Link
                 className="cursor-pointer font-bold text-gray-500 hover:text-gray-100 ease-in-out duration-300"
                 onClick={handleNav}
@@ -116,10 +113,10 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                Gallery
+                gallery
               </Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
               <Link
                 className="cursor-pointer font-bold text-gray-500 hover:text-gray-100 ease-in-out duration-300"
                 onClick={handleNav}
@@ -127,7 +124,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                Testimonials
+                testimonials
               </Link>
             </li>
             <li className="p-4">
@@ -138,17 +135,19 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
               >
-                Contact
+                contact
               </Link>
             </li>
-            <div className="w-full h-[60px] flex items-center justify-center mt-[500px]">
+
+            {/* Social Icons*/}
+            <div className="absolute bottom-0 flex">
               <a
                 className="m-4 hover:scale-110 ease-in-out duration-300 text-pink-500 hover:text-gray-100"
                 href="https://www.facebook.com/desiglow"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaFacebook className="cursor-pointer" size={30} />
+                <FaFacebook size={30} />
               </a>
               <a
                 className="m-4 hover:scale-110 ease-in-out duration-300 text-pink-500 hover:text-gray-100"
