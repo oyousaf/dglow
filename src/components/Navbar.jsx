@@ -140,7 +140,7 @@ const Navbar = () => {
             </li>
 
             {/* Social Icons*/}
-            <div className="absolute bottom-0 flex">
+            <div className="flex bottom-0 mt-[100px]">
               <a
                 className="m-4 hover:scale-110 ease-in-out duration-300 text-pink-500 hover:text-gray-100"
                 href="https://www.facebook.com/desiglow"
