@@ -37,7 +37,7 @@ const Testimonials = () => {
       </div>
       <div className="flex justify-center py-12">
         <Link to="home" smooth={true} duration={500} alt="top">
-          <div className="animate-pulse rounded-full bg-pink-500 shadow-lg  shadow-pink-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+          <div className="rounded-full bg-pink-500 shadow-lg  shadow-pink-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
             <HiChevronDoubleUp className="text-gray-100" size={30} />
           </div>
         </Link>
