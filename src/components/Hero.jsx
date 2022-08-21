@@ -1,5 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
+import { Link } from "react-scroll";
+import { HiChevronDoubleDown } from "react-icons/hi";
 
 const Hero = () => {
   return (
@@ -37,11 +39,19 @@ const Hero = () => {
       <p className="md:text-2xl text-xl font-bold text-gray-500">
         Still open for business so book an appointment now!
       </p>
-      <button className="md:text-2xl text-xl bg-pink-400 hover:bg-pink-500 w-[200px] rounded-md my-6 mx-auto py-3 font-bold text-gray-300 hover:text-white ease-in-out duration-500">
+      <button className="md:text-2xl text-xl bg-pink-500 hover:bg-pink-400 text-white hover:text-gray-100 w-[200px] rounded-md my-6 mx-auto py-3 font-bold ease-in-out duration-500">
         <a href="tel:01484511199" target="_blank" rel="noreferrer">
           Get in Touch
         </a>
       </button>
+
+      <div className="flex justify-center py-12">
+        <Link to="about" smooth={true} duration={500} alt="top">
+          <div className="rounded-full bg-pink-500 hover:bg-gray-100 shadow-lg shadow-pink-500 hover:shadow-gray-100 text-gray-100 hover:text-pink-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+            <HiChevronDoubleDown size={30} />
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

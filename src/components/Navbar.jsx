@@ -13,14 +13,15 @@ const Navbar = () => {
   return (
     <div className="w-full bg-pink-500 sticky top-0 z-50">
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+        
         <Link className="cursor-pointer" to="home" smooth={true} duration={500}>
-          <h1 className="w-full text-3xl font-bold text-white hover:text-pink-300">
+          <h1 className="w-full text-3xl font-bold text-white hover:text-pink-200">
             DESI GLOW
           </h1>
         </Link>
 
         <ul className="hidden md:flex">
-          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-300">
+          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-200">
             <Link to="home" smooth={true} duration={500}>
               Home
             </Link>
@@ -30,22 +31,22 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-300">
+          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-200">
             <Link to="treatments" smooth={true} duration={500}>
               Treatments
             </Link>
           </li>
-          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-300">
+          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-200">
             <Link to="gallery" smooth={true} duration={500}>
               Gallery
             </Link>
           </li>
-          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-300">
+          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-200">
             <Link to="testimonials" smooth={true} duration={500}>
               Testimonials
             </Link>
           </li>
-          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-300">
+          <li className="cursor-pointer text-xl font-bold p-4 text-white hover:text-pink-200">
             <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
@@ -55,9 +56,9 @@ const Navbar = () => {
         {/* Hamburger Btn */}
         <div className="block md:hidden z-10" onClick={handleNav}>
           {nav ? (
-            <AiOutlineClose size={20} className="text-white" />
+            <AiOutlineClose size={30} className="text-pink-500" />
           ) : (
-            <AiOutlineMenu size={20} className="text-white" />
+            <AiOutlineMenu size={30} className="text-white" />
           )}
         </div>
 

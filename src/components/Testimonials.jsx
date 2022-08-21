@@ -35,10 +35,11 @@ const Testimonials = () => {
           <h2 className="text-xl text-pink-500 py-4">Nuhida Ali</h2>
         </div>
       </div>
+
       <div className="flex justify-center py-12">
         <Link to="home" smooth={true} duration={500} alt="top">
-          <div className="rounded-full bg-pink-500 shadow-lg  shadow-pink-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-            <HiChevronDoubleUp className="text-gray-100" size={30} />
+          <div className="rounded-full bg-pink-500 hover:bg-gray-100 shadow-lg shadow-pink-500 hover:shadow-gray-100 text-gray-100 hover:text-pink-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+            <HiChevronDoubleUp size={30} />
           </div>
         </Link>
       </div>
